@@ -1,5 +1,7 @@
-function teste (num: Number): Number {
-  return num
-}
+import path from 'path'
+import * as dotenv from 'dotenv'
 
-teste(1)
+const environment = process.env.NODE_ENV || 'localhost'
+const envPath = path.join(__dirname, '..', 'env', environment + '.env')
+
+dotenv.config({ path: envPath })
