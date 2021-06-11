@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=localhost tsnd --traspile-only --respawn --ignore-watch node_modules src/server.ts"
+    "dev": "cross-env NODE_ENV=localhost tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/leiteGS/Info-Companies#readme",
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.12",
+    "@types/mongoose": "^5.11.97",
     "@types/node": "^15.12.2",
     "@typescript-eslint/eslint-plugin": "^4.26.1",
     "cross-env": "^7.0.3",
@@ -32,6 +34,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
   }
 }
