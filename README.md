@@ -15,7 +15,8 @@ dados local ou então devem ser buscados no serviço Brasil.io.
  - Run: npm run build -> npm run start (rodar em js)
 
 ## Folders Architeture 
-![image](https://user-images.githubusercontent.com/50277844/121778848-3c651d00-cb6f-11eb-8ab4-d78c03be32d8.png)
+![image](https://user-images.githubusercontent.com/50277844/121779456-13925700-cb72-11eb-9ea3-0ba7f8764209.png)
+
 
 ## Technologies
 - Database
