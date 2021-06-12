@@ -36,6 +36,5 @@ dados local ou então devem ser buscados no serviço Brasil.io.
 - Dependency Injection
 
 ## use 
- - access localhost:3333/getCompany 
- - send a json with cnpj
+ - access localhost:3333/getCompany sending a json with cnpj of company
  
