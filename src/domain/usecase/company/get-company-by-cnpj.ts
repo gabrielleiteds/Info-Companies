@@ -1,6 +1,5 @@
 import CompanyRepository from '../../../infra/repository/company-repository'
 import ValidatorCnpj from '../../../utils/validator-cnpj'
-import axios from 'axios'
 import ColaboratorRepository from '../../../infra/repository/colaborator-repository'
 
 import BrasilIoService from '../../../infra/services/brasil-io-service'
