@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=localhost tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
+    "dev": "cross-env NODE_ENV=localhost tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=localhost node dist/server.js"
   },
   "repository": {
     "type": "git",
