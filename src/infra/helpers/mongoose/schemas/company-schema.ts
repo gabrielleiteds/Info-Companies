@@ -10,9 +10,10 @@ const CompanySchema = new Schema({
   uf: {
     type: Schema.Types.String
   },
-  reasonSocial: {
-    type: Schema.Types.String
-  }
+  reasonSocial: [{
+    type: Schema.Types.ObjectId,
+    ref: 'colaborators'
+  }]
 })
 
 export default mongoose.model('companies', CompanySchema)
