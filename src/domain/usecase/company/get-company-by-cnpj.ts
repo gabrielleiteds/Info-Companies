@@ -49,7 +49,7 @@ export default class GetCompanyByCnpj {
       const [company] = await Promise.all([
         this.companyRepository.create({
           cnpj: companies.data.results[0].cnpj,
-          uf: companies.data.results[0].cnpj.uf,
+          uf: companies.data.results[0].uf,
           reasonSocial: companies.data.results[0].razao_social,
           colaborators: formatColaborators
         }),
