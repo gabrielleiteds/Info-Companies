@@ -1,5 +1,5 @@
 import { Response, Request } from 'express'
-import GetCompanyByCnpj from '../domain/usecase/company/get-company-by-cnpj'
+import GetCompanyByCnpj from '../../domain/usecase/company/get-company-by-cnpj'
 
 export default class GetCompanyByCnpjController {
   private readonly getCompanyByCnpjUseCase: GetCompanyByCnpj
