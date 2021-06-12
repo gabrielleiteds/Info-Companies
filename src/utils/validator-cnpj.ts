@@ -1,5 +1,5 @@
 export default class ValidatorCnpj {
-  validate (cnpj) {
+  validate (cnpj: String) {
     cnpj = cnpj.replace(/[^\d]+/g,'')
 
     if (cnpj === '') return false
@@ -32,7 +32,7 @@ export default class ValidatorCnpj {
       if (pos < 2) { pos = 9 }
     }
     let resultado = sum % 11 < 2 ? 0 : 11 - sum % 11
-    if (resultado !== digits.charAt(0)) { return false }
+    if (+resultado !== +digits.charAt(0)) { return false }
 
     size = size + 1
     numbers = cnpj.substring(0,size)
@@ -43,7 +43,7 @@ export default class ValidatorCnpj {
       if (pos < 2) { pos = 9 }
     }
     resultado = sum % 11 < 2 ? 0 : 11 - sum % 11
-    if (resultado !== digits.charAt(1)) { return false }
+    if (+resultado !== +digits.charAt(1)) { return false }
 
     return true
   }
