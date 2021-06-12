@@ -5,7 +5,7 @@ const ColaboratorSchema = new Schema({
     type: Schema.Types.String
   },
   name: {
-    type: Schema.Types.Array
+    type: Schema.Types.String
   },
   qualification: {
     type: Schema.Types.String
@@ -13,9 +13,8 @@ const ColaboratorSchema = new Schema({
   typePartner: {
     type: Schema.Types.String
   },
-  company: {
-    type: Schema.Types.ObjectId,
-    ref: 'companies'
+  companyCnpj: {
+    type: Schema.Types.String
   }
 })
 

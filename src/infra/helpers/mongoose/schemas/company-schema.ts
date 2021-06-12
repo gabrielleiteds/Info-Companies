@@ -4,10 +4,9 @@ const CompanySchema = new Schema({
   cnpj: {
     type: Schema.Types.String
   },
-  colaborators: [{
-    type: Schema.Types.ObjectId,
-    ref: 'colaborators'
-  }],
+  colaborators: {
+    type: Schema.Types.Array
+  },
   uf: {
     type: Schema.Types.String
   },
